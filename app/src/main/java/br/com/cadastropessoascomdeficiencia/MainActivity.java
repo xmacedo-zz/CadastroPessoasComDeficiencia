@@ -1,0 +1,21 @@
+package br.com.cadastropessoascomdeficiencia;
+
+import android.content.Intent;
+import android.view.View;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
+    }
+
+    public void btnStartOnClick(View view) {
+        Intent intent = new Intent(this, FormActivity.class);
+        startActivity(intent);
+    }
+}

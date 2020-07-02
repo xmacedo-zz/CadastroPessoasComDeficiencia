@@ -1,0 +1,16 @@
+CREATE DATABASE sicorde;
+USE sicorde;
+CREATE TABLE form_pessoas_def(
+	id                INT AUTO_INCREMENT,
+	nome              VARCHAR(100) NOT NULL,
+	data_nascimento   VARCHAR(50) NOT NULL,
+	email             VARCHAR(100) NOT NULL,
+	telefone          VARCHAR(50) NOT NULL,
+	sexo              VARCHAR(50) NOT NULL,
+	tipos_deficiencia VARCHAR(100) NOT NULL,
+	detalhes          VARCHAR(100) NOT NULL,
+	endereco          VARCHAR(100) NOT NULL,
+	cidade            VARCHAR(100) NOT NULL,
+	cep               VARCHAR(50) NOT NULL,
+	PRIMARY KEY(id)
+);
